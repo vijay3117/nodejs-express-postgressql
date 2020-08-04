@@ -1,0 +1,26 @@
+{
+    "development": {
+        "username": "postgres",
+        "password": "postgres",
+        "database": "sumitra",
+        "host": "localhost",
+        "dialect": "postgres",
+        "logging": false
+    },
+    "staging": {
+        "username": "postgres",
+        "password": "postgres",
+        "database": "sumitra",
+        "host": "localhost",
+        "dialect": "postgres",
+        "logging": false
+    },
+    "production": {
+        "username": "postgres",
+        "password": "postgres",
+        "database": "sumitra",
+        "host": "localhost",
+        "dialect": "postgres",
+        "logging": false
+    }
+}
