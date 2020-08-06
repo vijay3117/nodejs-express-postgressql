@@ -5,7 +5,7 @@ const Op = db.Sequelize.Op;
 // Create and Save
 exports.create = (req, res) => {
     // Validate request
-    if (!req.body.title) {
+    if (!req.body.username && !req.body.password) {
         res.status(400).send({
             message: "Request content cannot be empty!"
         });
@@ -14,8 +14,8 @@ exports.create = (req, res) => {
 
     // Create
     const users = {
-        username: req.body.title,
-        password: req.body.description,
+        username: req.body.username,
+        password: req.body.password,
         email: req.body.email
     };
 
